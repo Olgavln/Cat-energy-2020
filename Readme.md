@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Olga Palamarchuk]( https://up.htmlacademy.ru/adaptive/20/user/1113921 ).
-* Наставник: [Амина Омарова]. ( https://htmlacademy.ru/profile/ami ).
+* Студент: [Olga Palamarchuk](https://up.htmlacademy.ru/adaptive/20/user/1113921).
+* Наставник: [Амина Омарова]. (https://htmlacademy.ru/profile/ami).
 
 ---
 
