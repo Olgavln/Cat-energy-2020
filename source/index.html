@@ -17,6 +17,7 @@
       </a>
       </figure>
 
+
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -25,30 +26,28 @@
     </header>
 
     <main class="page-main">
-      <div>
+      <div class="intro">
         <h1 class="title-main">Функциональное питание для котов </h1>
         <p class="slogan">Занялся собой? Займись котом!</p>
 
         <img class="image-background-cat" src="https://via.placeholder.com/150x150"  width="226" height="30" alt="фото кота">
         <img class="image-product" src="https://via.placeholder.com/150x150"  width="226" height="30" alt="фото корма для кота">
+        <a class="intro__choose button" href="form.html">подобрать программу</a>
       </div>
 
       <section class="food-program">
-        <h2 class="visually-hidden">Выбор программы питания</h2>
-        <a class="food-program__choose" href="form.html">подобрать программу</a>
-        <ul class="food-program__list">
-          <li class="food-program__item  food-program__item--full">
-            <h3 class="food-program__title">Похудение</h3>
-            <p class="food-program__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a class="food-program__catalog" href="#">каталог slim</a>
-          </li>
+        <div class="food-program__slim  food-program__slim--icon">
+          <h2 class="food-program__title">Похудение</h2>
+          <p class="food-program__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+          <a class="food-program__catalog" href="#">каталог slim</a>
+        </div>
 
-          <li class="food-program__item  food-program__item--thin">
-            <h3 class="food-program__title">Набор массы</h3>
-            <p class="food-program__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <a class="food-program__catalog" href="#">каталог pro</a>
-          </li>
-        </ul>
+        <div class="food-program__pro food-program__pro--icon">
+          <h2 class="food-program__title">Набор массы</h2>
+          <p class="food-program__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы! </p>
+          <a class="food-program__catalog" href="#">каталог pro</a>
+        </div>
+
       </section>
 
       <section class="advantage">
@@ -61,18 +60,52 @@
         </ul>
       </section>
 
-      <section class="contact-store">
-        <h2 class="visually-hidden">Наши контакты</h2>
-        <p class="contact-store__join">приглашаем к сотрудничеству дилеров!</p>
-        <p>ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-        <img class="contact-store__map" src="#" alt="карта месторасположения магазина">
+      <section class="example">
+        <h2 class="example__title">Живой пример</h2>
+        <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+
+        <div class="result">
+          <div class="weight">
+           <b class="weight__result"> 5 КГ</b>
+           <small class="weight__weight-loss">снижение веса</small>
+          </div>
+
+          <div class="day">
+            <b class="day__how"> 60 ДНЕЙ</b>
+            <small class="day__time">затрачено времени</small>
+          </div>
+
+          <p class="result__money">Затраты на питание: 15 000 РУБ.</p>
+
+        </div>
+
+        <div class="image-comparison">
+          <div class="image-comparison__before">
+            <img class="image-comparison__image" src="#" alt="кот до правильного питания">
+          </div>
+
+          <img class="image-comparison__image" src="#" alt="кот после правильного питания">
+
+          <button class="image-comparison__slider">было</button>
+          <button class="image-comparison__slider">стало</button>
+
+        </div>
       </section>
+
+
 
     </main>
 
     <footer class="page-footer">
+
+      <div class="page-footer__contacts contacts">
+        <p class="contacts__title">приглашаем к сотрудничеству дилеров!</p>
+        <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <img class="contact__map" src="#" alt="карта месторасположения магазина">
+      </div>
+
       <div class="page-footer__wrapper">
-        <div class="page-footer-store">
+        <div class="page-footer__store">
           <a class="page-footer-store__store-name">
             <img src="https://via.placeholder.com/150x150" width="226" height="30" alt="Название магазина" >
           </a>
