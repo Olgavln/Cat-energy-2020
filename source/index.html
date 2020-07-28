@@ -30,7 +30,7 @@
         <p class="intro__slogan">Занялся собой? Займись котом!</p>
 
         <img class="intro__image" src="https://via.placeholder.com/150x150"  width="226" height="30" alt="фото корма для кота">
-        <a class="intro__button button.intro__button" href="form.html">подобрать программу</a>
+        <a class="intro__button button" href="form.html">подобрать программу</a>
       </div>
 
       <section class="program program--slim-icon">
@@ -60,17 +60,18 @@
         <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
 
         <div class="result">
-          <div class="result__weight">
-           <b class="result__weight-weight"> 5 КГ</b>
-           <small class="result__loss-loss">снижение веса</small>
+          <div class="result__index">
+           <b class="result__index-index"> 5 КГ</b>
+           <small class="result__index-description">снижение веса</small>
           </div>
 
-          <div class="result__day"></div>
-            <b class="result__day-day"> 60 ДНЕЙ</b>
-            <small class="result__time-time">затрачено времени</small>
+          <div class="result__index">
+            <b class="result__index-index"> 60 ДНЕЙ</b>
+            <small class="result__index-description">затрачено времени</small>
           </div>
 
           <p class="result__money">Затраты на питание: 15 000 РУБ.</p>
+        </div>
 
 
 
@@ -80,8 +81,11 @@
               <img class="image-comparison__image" src="#" alt="кот после правильного питания">
             </div>
 
-            <input class="image-comparison__toggles" type="range">
+
             <button class="image-comparison__slider">было</button>
+            <div class="image-comparison__indicator">
+              <div class="image-comparison__indicator-control "></div>
+            </div>
             <button class="image-comparison__slider">стало</button>
 
           </div>
@@ -92,41 +96,42 @@
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__wrapper">
 
-       <div class="page-footer__contacts contacts">
-         <p class="contacts__title">приглашаем к сотрудничеству дилеров!</p>
-         <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-         <img class="contact__map" src="#" alt="карта месторасположения магазина">
-       </div>
-
-        <div class="page-footer__store">
-          <a class="page-footer-store__store-name">
-            <img src="https://via.placeholder.com/150x150" width="226" height="30" alt="Название магазина" >
-          </a>
-        </div>
-
-       <div class="page-footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="#">Мы в Вконтакте</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
-            </li>
-            <li class="social__item">
-             <a class="social__link social__link--instagram" href="#">Мы в Инстаграме</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="page-footer__logo-academy logo-academy">
-          <a class="logo-academy__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          <a class="logo-academy__logo"> <img src="https://via.placeholder.com/150x150" width="226" height="30" alt="логотип HTML Academy">
-          </a>
-        </div>
-
+      <div class="page-footer__contacts contacts">
+        <p class="contacts__title">приглашаем к сотрудничеству дилеров!</p>
+        <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
+      <img class="page-footer__map" src="#" alt="Офис Магазина ул. Большая Конюшенная, д. 19/8 Санкт-Петербур ">
+
+
+        <div class="page-footer__wrapper">
+         <a class="page-footer__logo">
+          <img src="https://via.placeholder.com/150x150" width="226" height="30" alt="Название магазина" >
+         </a>
+
+          <div class="page-footer__social social">
+           <ul class="social__list">
+             <li class="social__item">
+               <a class="social__link social__link--vkontakte" href="#">Мы в Вконтакте</a>
+             </li>
+             <li class="social__item">
+               <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
+             </li>
+             <li class="social__item">
+               <a class="social__link social__link--instagram" href="#">Мы в Инстаграме</a>
+             </li>
+          </ul>
+          </div>
+
+
+           <div class="page-footer__logo-academy logo-academy">
+             <a class="logo-academy__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+             <a class="logo-academy__logo"> <img src="https://via.placeholder.com/150x150" width="226" height="30" alt="логотип HTML Academy">
+             </a>
+           </div>
+         </div>>
+
+
 
     </footer>
 
