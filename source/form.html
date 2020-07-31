@@ -24,14 +24,89 @@
     </nav>
   </header>
 
-
+  <section class="selection">
+    <h1 class="selection__title">Подбор программы</h1>
+    <p class="selection__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+    <form class="selection__form" action="https://echo.htmlacademy.ru" method="post">
+      <p class="selection__form-item">
+        <label for="name">ИМЯ:*</label>
+        <input class="selection__form-text" id="name" type="text" name="name" value="" placeholder="БАРСИК">
+      </p>
+      <p class="selection__item">
+        <label for="weight">Вес (кг):*</label>
+        <input class="selection__form-text" id="weight" type="text" name="weight" value="" placeholder="7">
+      </p>
+      <p class="selection__item">
+        <label for="age">Вес (кг):*</label>
+        <input class="selection__form-text" id="age" type="text" name="age" value="" placeholder="7">
+      </p>
+      <div class="selection__form-program">
+        <p class="selection__item">
+          <input id="thin" type="radio" name="program" value="похудение" checked>
+          <label for="thin">похудение</label>
+        </p>
+        <p class="selection__item">
+          <input id="full" type="radio" name="program" value="Набор массы">
+          <label for="full">Набор массы</label>
+        </p>
+        <p class="selection__item">
+          <input id="advice" type="radio" name="program" value="Не знаю (Нужен ваш совет)">
+          <label for="advice">Не знаю (Нужен ваш совет)</label>
+        </p>
+      </div>
+      <div class="selection__form-contact">
+        <h2 class="selection__form-contact__title">Контактные данные (владельца кота)</h2>
+        <p class="selection__form-contact__item">
+          <input id="email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+          <label for="email">Email *</label>
+        </p>
+        <p class="selection__form-contact__item">
+          <input id="Phone" type="tel" name="Phone" placeholder="8 (960) 900-60-90" required>
+          <label for="Phone">Phone *</label>
+        </p>
+      </div>
+      <h2 class="selection__form-coment">Комментарий </h2>
+      <label for="coment">
+        <textarea id="coment" type="text" name="coment" placeholder="Расскажите обо всех повАдках кота"
+          rows="5">Расскажите обо всех повадках кота</textarea>
+      </label>
+      <div class="selection__form-add">
+        <h2 class="selection__form-add__title">Дополнительно</h2>
+        <ul class="selection__form-add__list">
+          <li class="selection__form-add__item">
+            <input id="filter-sweetener" type="checkbox" name="сахарозаменитель" checked>
+            <label for="filter-sweetener">сахарозаменитель</label>
+          </li>
+          <li class="selection__form-add__item">
+            <input id="filter-water" type="checkbox" name="питьевая вода">
+            <label for="filter-water">питьевая вода</label>
+          </li>
+          <li class="selection__form-add__item">
+            <input id="filter-milk" type="checkbox" name="молоко">
+            <label for="filter-milk">молоко</label>
+          </li>
+          <li class="selection__form-add__item">
+            <input id="filter-vitamins" type="checkbox" name="витамины">
+            <label for="filter-vitamins">витамины</label>
+          </li>
+        </ul>
+      </div>
+      <button class="selection__form" type="submit">отправить заявку</button>
+      <p class="selection__form selection__form--top">
+        <small>
+          * — Обязательные поля
+        </small>
+      </p>
+    </form>
+  </section>
   <footer class="page-footer">
 
     <div class="page-footer__contacts contacts">
       <p class="contacts__title">приглашаем к сотрудничеству дилеров!</p>
       <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
     </div>
-    <img class="page-footer__map" src="#" alt="Офис Магазина ул. Большая Конюшенная, д. 19/8 Санкт-Петербур ">
+    <img class="page-footer__map" src="https://via.placeholder.com/150x150"
+      alt="Офис Магазина ул. Большая Конюшенная, д. 19/8 Санкт-Петербур ">
 
     <div class="page-footer__wrapper">
       <a class="page-footer__logo">
