@@ -4,18 +4,16 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page__body">
 
   <header class="page-header">
     <a class="page-header__logo">
-      <img src="https://via.placeholder.com/150x150" width="226" height="30" alt="логотип Кэт энерджи">
+      <img src="img/logo-mobile.svg" width="226" height="30" alt="логотип Кэт энерджи">
     </a>
 
-    <a class="page-header__store-name">
-      <img src="https://via.placeholder.com/150x150" width="226" height="30" alt="Название магазина">
-    </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
@@ -30,7 +28,7 @@
       <section class="catalog-product__product">
         <h2 class="visually-hidden">Характеристика продукта Cat Energy PRO 500 г.</h2>
         <a href="#" class="catalog-product__image">
-          <img src="https://via.placeholder.com/150x150" width="226" height="30" alt="фото товара">
+          <img src="img/chicken-small-mobile@1x.jpg" width="226" height="30" alt="фото товара">
         </a>
         <a href="#" class="catalog-product__name">
           <h3 class="catalog-product__title-product">Cat Energy PRO 500 г</h3>
@@ -54,7 +52,7 @@
       <section class="catalog-product__product">
         <h2 class="visually-hidden">Характеристика продукта Cat Energy PRO 1000 г</h2>
         <a class="catalog-product__image">
-          <img src="https://via.placeholder.com/150x150" width="226" height="30" alt="фото товара">
+          <img src="img/chicken-big-mobile@1x.jpg" width="226" height="30" alt="фото товара">
         </a>
         <a href="#" class="catalog-product__name">
           <h3 class="catalog-product__title-product">Cat Energy PRO 1000 г</h3>
@@ -78,7 +76,7 @@
       <section class="catalog-product__product">
         <h2 class="visually-hidden">Характеристика продукта Cat Energy PRO 500 г</h2>
         <a class="catalog-product__image">
-          <img src="https://via.placeholder.com/150x150" width="226" height="30" alt="фото товара">
+          <img src="img/fish-small-mobile@1x.jpg" width="226" height="30" alt="фото товара">
         </a>
         <a href="#" class="catalog-product__name">
           <h3 class="catalog-product__title-product">Cat Energy PRO 500 г</h3>
@@ -102,7 +100,7 @@
       <section class="catalog-product__product">
         <h2 class="visually-hidden">Характеристика продукта Cat Energy PRO 1000 г</h2>
         <a class="catalog-product__image">
-          <img src="https://via.placeholder.com/150x150" width="226" height="30" alt="фото товара">
+          <img src="img/fish-big-mobile@1x.jpg" width="226" height="30" alt="фото товара">
         </a>
         <a href="#" class="catalog-product__name">
           <h3 class="catalog-product__title-product">Cat Energy PRO 1000 г</h3>
@@ -126,7 +124,7 @@
       <section class="catalog-product__product">
         <h2 class="visually-hidden">Характеристика продукта Cat Energy slim 500 г</h2>
         <a class="catalog-product__image">
-          <img src="https://via.placeholder.com/150x150" width="226" height="30" alt="фото товара">
+          <img src="img/buckwheat-small-mobile@1x.jpg" width="226" height="30" alt="фото товара">
         </a>
         <a href="#" class="catalog-product__name">
           <h3 class="catalog-product__title-product">Cat Energy slim 500 г</h3>
@@ -148,9 +146,34 @@
       </section>
 
       <section class="catalog-product__product">
+        <h2 class="visually-hidden">Характеристика продукта Cat Energy slim 1000 г</h2>
+        <a class="catalog-product__image">
+          <img src="img/buckwheat-big-mobile@1x.jpg" width="226" height="30" alt="фото товара">
+        </a>
+        <a href="#" class="catalog-product__name">
+          <h3 class="catalog-product__title-product">Cat Energy slim 1000 г</h3>
+        </a>
+        <table class="catalog-product__table">
+          <tr class="catalog-product__table-line">
+            <td class="catalog-product__table-column">Масса</td>
+            <td class="catalog-product__table-column">1000 г</td>
+          </tr>
+          <tr class="catalog-product__table-line">
+            <td class="catalog-product__table-column">Вкус</td>
+            <td class="catalog-product__table-column">Гречка</td>
+          </tr>
+          <tr class="catalog-product__table-line">
+            <td class="catalog-product__table-column">Цена</td>
+            <td class="catalog-product__table-column">700 Р.</td>
+        </table>
+        <a class="catalog-product-order  button" href="#">заказать</a>
+      </section>
+
+
+      <section class="catalog-product__product">
         <h2 class="visually-hidden">Характеристика продукта Cat Energy slim 500 г</h2>
         <a class="catalog-product__image">
-          <img src="https://via.placeholder.com/150x150" width="226" height="30" alt="фото товара">
+          <img src="img/rice-small-mobile@1x.jpg" width="226" height="30" alt="фото товара">
         </a>
         <a href="#" class="catalog-product__name">
           <h3 class="catalog-product__title-product">Cat Energy slim 500 г</h3>
@@ -213,7 +236,7 @@
 
     <div class="bonus">
 
-      <p>Закажите все и получите чехол для кота в подарок!</p>
+      <p class="bonus__text">Закажите все и получите чехол для кота в подарок!</p>
     </div>
 
   </main>
@@ -224,7 +247,7 @@
       <p class="contacts__title">приглашаем к сотрудничеству дилеров!</p>
       <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
     </div>
-    <img class="page-footer__map" src="#" alt="Офис Магазина ул. Большая Конюшенная, д. 19/8 Санкт-Петербур ">
+    <img class="page-footer__map" src="img/bg-map-mobile@1x.png" alt="Офис Магазина ул. Большая Конюшенная, д. 19/8 Санкт-Петербур ">
 
     <div class="page-footer__wrapper">
       <a class="page-footer__logo">
@@ -250,7 +273,7 @@
             alt="логотип HTML Academy">
         </a>
       </div>
-    </div>>
+    </div>
 
   </footer>
 
