@@ -1,19 +1,53 @@
-@import "page__body.less";
-@import "selection.less";
-@import "result.less";
-@import "program.less";
-@import "main-nav.less";
-@import "intro.less";
-@import "advantage.less";
-@import "example.less";
-@import "image-comparison.less";
-@import "page-footer.less";
-@import "header.less";
-@import "catalog-product.less";
-@import "product-more.less";
-@import "product-aside.less";
-@import "bonus.less";
-@import "form.less";
+@import "imports.less";
+/* нужен этот стиль?
+html,
+body {
+  height: 100%;
+}
+*/
+/*фиксация при скроле, позже добавлю тк поднимается img кот
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}*/
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "oswaldregular", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+  text-transform: lowercase;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  font: inherit;
+  text-align: center;
+  color: #FFFFFF;
+  vertical-align: middle;
+
+  text-transform: uppercase;
+
+  background-color: #68B738;
+  border: none;
+ }
+
+ .button:hover,
+ .button:focus,
+ .button:active {
+   background-color: #00CC33;
+ }
 
 
 .visually-hidden {
@@ -28,8 +62,3 @@
 }
 
 @base-color: #000000;
-
-
-
-
-

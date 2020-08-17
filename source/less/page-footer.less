@@ -1,45 +1,35 @@
-.page-footer {
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* не срабатывает*/
   background-color: #F2F2F2;
 }
 
-.social__link:hover,
-.social__link:focus {
-  color: #696969;
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 320px;
+  height: 720px;
+  background-color: #F2F2F2;
 }
 
-.contacts__title {
-  font-family: Oswald;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 21px;
-
-  text-transform: uppercase;
-  text-align: left;
-
-  color: #111111;
-}
-
-.contacts__text {
-  font-family: Arial;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
-
-  text-align: right;
-}
-
-.social__link {
-  text-align: center;
-}
-
-.social__item {
-  list-style: none;
-
+.page-footer__contacts {
+  display: flex;
+  flex-direction: row;
+  background-color: #FFFFFF;
 }
 
 .page-footer__map {
-  width: 320px; /*на макете отличается карта*/
+  width: 320px;
+  /*на макете отличается карта*/
   height: 362px;
+}
+
+.page-footer__logo{
+  margin-top: 40px;
+  margin-left: 96px;
+  margin-left: 96px;
+  margin-bottom: 52px;
+
 }
