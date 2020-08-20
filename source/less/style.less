@@ -16,12 +16,12 @@ header {
 body {
   margin: 0;
   padding: 0;
-  font-family: "oswaldregular", Arial, sans-serif;
+  font-family: "oswaldregular", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: #444444;
   text-transform: lowercase;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   display: flex;
   flex-direction: column;
   width: 320px;
@@ -34,22 +34,24 @@ a {
 .button {
   font: inherit;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   vertical-align: middle;
 
   text-transform: uppercase;
 
-  background-color: #68B738;
+  background-color: #68b738;
   border: none;
   transition: 1s;
- }
+}
 
- .button:hover,
- .button:focus,
- .button:active {
-   background-color: #5EAA2F;
- }
+.button:hover,
+.button:active {
+  background-color: #5eaa2f;
+}
 
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
 
 .visually-hidden {
   position: absolute;
