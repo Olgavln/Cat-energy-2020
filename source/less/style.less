@@ -1,1 +1,65 @@
-// Начните писать стили здесь
+@import "imports.less";
+/* нужен этот стиль?
+html,
+body {
+  height: 100%;
+}
+*/
+/*фиксация при скроле, позже добавлю тк поднимается img кот
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}*/
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "oswaldregular", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+  text-transform: lowercase;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  font: inherit;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+
+  text-transform: uppercase;
+
+  background-color: #68b738;
+  border: none;
+  transition: 0.5s;
+}
+
+.button:hover,
+.button:active {
+  background-color: #5eaa2f;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
