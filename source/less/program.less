@@ -36,6 +36,9 @@
   text-transform: uppercase;
 }
 
+.program__catalog:active {
+  opacity: 0.3;
+}
 
 .program__wraper {
   width: 280px;
@@ -49,12 +52,16 @@
 
 .program__catalog::after {
   content: "";
-  /*пока не позиционировала - изучу еще*/
   background-image: url("../img/icon-right-arrow-long.svg");
   background-repeat: no-repeat;
   width: 24px;
   height: 12px;
-  position: absolute;
   margin-left: 15px;
   display: inline-block;
+}
+
+.program--slim-icon {
+  background-image: url("../img/icon-cat-slim.svg");
+  background-repeat: no-repeat;
+  background-position: left top;
 }
