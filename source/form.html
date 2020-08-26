@@ -12,7 +12,7 @@
 
   <header class="page-header">
     <a class="page-header__logo">
-      <img src="img/logo-mobile.svg" width="226" height="30" alt="логотип Кэт энерджи">
+      <img src="img/logo-mobile.svg" width="280" height="38" alt="логотип Кэт энерджи">
     </a>
 
     <nav class="main-nav">
@@ -20,17 +20,17 @@
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <ul class="main-nav__list site-list">
-        <li class="site-list__item">
+        <li class="site-list__item line">
           <a class="site-list__link" href="index.html">
             Главная
           </a>
         </li>
-        <li class="site-list__item">
+        <li class="site-list__item line">
           <a class="site-list__link" href="catalog.html">
             каталог продукции
           </a>
         </li>
-        <li class="site-list__item">
+        <li class="site-list__item line">
           <a class="site-list__link site-list__link--active" href="form.html">
             подбор программы
           </a>
@@ -48,50 +48,52 @@
           <legend class="visually-hidden">Выбор программы</legend>
           <div class="form__data-item">
             <label class="form__data-value" for="name">
-              <div class="form__value">ИМЯ:*</div><input class="form__data-text" id="name" type="text" name="name"
-                value="" placeholder="БАРСИК">
-            </label> <br>
+              <div class="form__value">ИМЯ:*</div>
+              <input class="form__data-text" id="name" type="text" name="name" value="" placeholder="БАРСИК">
+            </label>
 
             <label class="form__data-value" for="weight">
               <div class="form__value">Вес (кг):*</div>
               <input class="form__data-text" id="weight" type="text" name="weight" value="" placeholder="7">
-            </label> <br>
-
+            </label>
             <label class="form__data-value" for="age">
               <div class="form__value">Возраст (лет):</div>
               <input class="form__data-text" id="age" type="text" name="age" value="" placeholder="7">
-            </label> <br>
+            </label>
           </div>
 
-          <div class="form__data-choice">
-            <label class="form__data-value" for="thin">
-              <input class="form__data-radio" id="thin" type="radio" name="program" value="похудение" checked>
-              <div class="form__value">похудение</div>
-            </label><br>
+          <div class="form__data-container ">
+            <div class="form__data-choice">
+              <label class="form__data-value" for="thin">
+                <input class="form__data-radio" id="thin" type="radio" name="program" value="похудение" checked>
+                <div class="form__value">похудение</div>
+              </label>
 
-            <label class="form__data-value" for="full">
-              <input class="form__data-radio" id="full" type="radio" name="program" value="Набор массы">
-              <div class="form__value">Набор массы</div>
+              <label class="form__data-value" for="full">
+                <input class="form__data-radio" id="full" type="radio" name="program" value="Набор массы">
+                <div class="form__value">Набор массы</div>
 
-            </label> <br>
+              </label>
 
-            <label class="form__data-value" for="advice">
-              <input class="form__data-radio" id="advice" type="radio" name="program" value="Не знаю (Нужен ваш совет)">
-              <div class="form__value">Не
-                знаю (Нужен ваш совет)</div>
-            </label>
+              <label class="form__data-value" for="advice">
+                <input class="form__data-radio" id="advice" type="radio" name="program"
+                  value="Не знаю (Нужен ваш совет)">
+                <div class="form__value">Не
+                  знаю (Нужен ваш совет)</div>
+              </label>
+            </div>
           </div>
         </fieldset>
 
         <div class="form__contact">
           <h2 class="form__contact-title">Контактные данные (владельца кота)</h2>
-          <label class="form__contact__contact" for="email">
+          <label class="form__contact-input" for="email">
             <div class="form__value">Email *</div><input class="form__contact-email" id="email" type="email"
               name="email" placeholder="kuklachev@gmail.com" required>
-          </label> <br>
+          </label>
 
-          <label class="form__contact__tel" for="Phone">
-            <div class="form__value">Phone *</div><input class="form__contact-phone" id="Phone" type="tel" name="Phone"
+          <label class="form__contact-input" for="Phone">
+            <div class="form__value">Phone *</div> <input class="form__contact-phone" id="Phone" type="tel" name="Phone"
               placeholder="8 (960) 900-60-90" required>
           </label>
         </div>
@@ -104,25 +106,29 @@
 
         <div class="form__add">
           <h2 class="form__add-title">Дополнительно</h2>
-          <label class="form__add-sweetener" for="filter-sweetener">
-            <input class="form__add-product" id="filter-sweetener" type="checkbox" name="сахарозаменитель" checked>
-            <div class="form__value">сахарозаменитель</div>
-          </label>
+          <div class="form__add-container">
+            <label class="form__add-sweetener" for="filter-sweetener">
+              <div class="form__value form-imput">сахарозаменитель</div>
+              <input class="form__add-product" id="filter-sweetener" type="checkbox" name="сахарозаменитель" checked>
+            </label>
 
-          <label class="form__add-water" for="filter-water">
-            <input class="form__add-product" id="filter-water" type="checkbox" name="питьевая вода">
-            <div class="form__value">питьевая вода</div>
-          </label>
+            <label class="form__add-water" for="filter-water">
+              <div class="form__value form-imput">питьевая вода</div>
+              <input class="form__add-product" id="filter-water" type="checkbox" name="питьевая вода">
 
-          <label class="form__add-milk" for="filter-milk">
-            <input class="form__add-product" id="filter-milk" type="checkbox" name="молоко">
-            <div class="form__value">молоко</div>
-          </label>
+            </label>
 
-          <label class="form__add-vitamins" for="filter-vitamins">
-            <input class="form__add-product" id="filter-vitamins" type="checkbox" name="витамины">
-            <div class="form__value">витамины</div>
-          </label>
+            <label class="form__add-milk" for="filter-milk">
+              <div class="form__value form-imput">молоко</div>
+              <input class="form__add-product" id="filter-milk" type="checkbox" name="молоко">
+
+            </label>
+
+            <label class="form__add-vitamins" for="filter-vitamins">
+              <div class="form__value form-imput">витамины</div>
+              <input class="form__add-product" id="filter-vitamins" type="checkbox" name="витамины">
+            </label>
+          </div>
         </div>
         <button class="form__button  button" type="submit">отправить заявку</button>
         <small class="form__add-legend">
@@ -143,30 +149,35 @@
 
     <div class="page-footer__wrapper">
       <a class="page-footer__logo">
-        <img src="https://via.placeholder.com/150x150" width="226" height="30" alt="Название магазина">
+        <img src="img/logo-footer.svg" width="124" height="24" alt="Название магазина">
       </a>
 
       <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="#">Мы в Вконтакте</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="#">Мы в Инстаграме</a>
-          </li>
-        </ul>
-      </div>
+        <div class="social__wraper">
+          <div class="social__wraper">
+            <ul class="social__list">
+              <div class="social__wraper">
+                <li class="social__item">
+                  <a class="social__link social__link--vkontakte" href="#">Мы в Вконтакте</a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--instagram" href="#">Мы в Инстаграме</a>
+                </li>
+              </div>
+            </ul>
+          </div>
 
-      <div class="page-footer__logo-academy logo-academy">
-        <a class="logo-academy__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        <a class="logo-academy__logo"> <img src="https://via.placeholder.com/150x150" width="226" height="30"
-            alt="логотип HTML Academy">
-        </a>
+        </div>
+        <div class="page-footer__logo-academy logo-academy">
+          <a class="logo-academy__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="logo-academy__logo"> <img src="img/htmlacademy.svg" width="230" height="30"
+              alt="логотип HTML Academy">
+          </a>
+        </div>
       </div>
-    </div>>
 
   </footer>
 
