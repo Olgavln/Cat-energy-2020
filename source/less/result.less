@@ -1,7 +1,21 @@
 /* не уверена что верно, еще почитаю..*/
 .result__wraper {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  width: 280px;
+  margin: 0;
+  text-align: center;
+}
+
+.result__index {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  margin-top: 25px;
+  border: 1px solid #CDCDCD;
+  width: 124px;
+  height: 56px;
 }
 
 .result__index-index {
@@ -10,6 +24,7 @@
   font-weight: normal;
   font-size: 24px;
   line-height: 24px;
+  margin-top: 15px;
 
   color: @base-color;
 }
@@ -20,6 +35,11 @@
   font-weight: normal;
   font-size: 12px;
   line-height: 12px;
+  width: 80px;
+  background: #eaeaea;
+  margin-top: 8px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .result__money {
@@ -28,6 +48,7 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
+  margin: 35px 0 42px 0;
 
   text-align: center;
   text-transform: uppercase;

@@ -10,34 +10,37 @@
 
 <body class="page__body">
 
-  <header class="page-header">
-    <a class="page-header__logo">
-      <img src="img/logo-mobile.svg" width="280" height="38" alt="логотип Кэт энерджи">
-    </a>
-
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item line">
-          <a class="site-list__link" href="index.html">
-            Главная
-          </a>
-        </li>
-        <li class="site-list__item line">
-          <a class="site-list__link" href="catalog.html">
-            каталог продукции
-          </a>
-        </li>
-        <li class="site-list__item line">
-          <a class="site-list__link site-list__link--active" href="form.html">
-            подбор программы
-          </a>
-        </li>
-      </ul>
-    </nav>
+  <header class="page-header container">
+    <div class="page-header__wraper">
+      <a class="page-header__logo">
+        <img src="img/logo-mobile.svg" width="190" height="38" alt="логотип Кэт энерджи">
+      </a>
+      <nav class="main-nav main-nav--opened">
+        <!--main-nav--closed-->
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="index.html">
+              Главная
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="catalog.html">
+              каталог продукции
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--active" href="form.html">
+              подбор программы
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
+
   <main class="page-main">
 
     <section class="selection">
@@ -107,25 +110,25 @@
         <div class="form__add">
           <h2 class="form__add-title">Дополнительно</h2>
           <div class="form__add-container">
-            <label class="form__add-sweetener" for="filter-sweetener">
-              <div class="form__value form-imput">сахарозаменитель</div>
+            <label class="form__add-label" for="filter-sweetener">
+              <div class="form__value form__value--label">сахарозаменитель</div>
               <input class="form__add-product" id="filter-sweetener" type="checkbox" name="сахарозаменитель" checked>
             </label>
 
-            <label class="form__add-water" for="filter-water">
-              <div class="form__value form-imput">питьевая вода</div>
+            <label class="form__add-label" for="filter-water">
+              <div class="form__value form__value--label">питьевая вода</div>
               <input class="form__add-product" id="filter-water" type="checkbox" name="питьевая вода">
 
             </label>
 
-            <label class="form__add-milk" for="filter-milk">
-              <div class="form__value form-imput">молоко</div>
+            <label class="form__add-label" for="filter-milk">
+              <div class="form__value form__value--label">молоко</div>
               <input class="form__add-product" id="filter-milk" type="checkbox" name="молоко">
 
             </label>
 
-            <label class="form__add-vitamins" for="filter-vitamins">
-              <div class="form__value form-imput">витамины</div>
+            <label class="form__add-label" for="filter-vitamins">
+              <div class="form__value form__value--label">витамины</div>
               <input class="form__add-product" id="filter-vitamins" type="checkbox" name="витамины">
             </label>
           </div>
@@ -139,46 +142,39 @@
     </section>
   </main>
   <footer class="page-footer">
-
-    <div class="page-footer__contacts contacts">
+    <div class="page-footer__contacts contacts container">
       <p class="contacts__title">приглашаем к сотрудничеству дилеров!</p>
       <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
     </div>
-    <img class="page-footer__map" src="img/bg-map-mobile@1x.png"
-      alt="Офис Магазина ул. Большая Конюшенная, д. 19/8 Санкт-Петербур ">
-
-    <div class="page-footer__wrapper">
+    <div class="container-img">
+      <img class="page-footer__map" src="img/bg-map-mobile@1x.png" width="320" height="362"
+        alt="Офис Магазина ул. Большая Конюшенная, д. 19/8 Санкт-Петербур ">
+    </div>
+    <div class="page-footer__wrapper container">
       <a class="page-footer__logo">
         <img src="img/logo-footer.svg" width="124" height="24" alt="Название магазина">
       </a>
-
       <div class="page-footer__social social">
-        <div class="social__wraper">
+        <ul class="social__list">
           <div class="social__wraper">
-            <ul class="social__list">
-              <div class="social__wraper">
-                <li class="social__item">
-                  <a class="social__link social__link--vkontakte" href="#">Мы в Вконтакте</a>
-                </li>
-                <li class="social__item">
-                  <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
-                </li>
-                <li class="social__item">
-                  <a class="social__link social__link--instagram" href="#">Мы в Инстаграме</a>
-                </li>
-              </div>
-            </ul>
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href=""></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="#"></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="#"></a>
+            </li>
           </div>
-
-        </div>
-        <div class="page-footer__logo-academy logo-academy">
-          <a class="logo-academy__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          <a class="logo-academy__logo"> <img src="img/htmlacademy.svg" width="230" height="30"
-              alt="логотип HTML Academy">
-          </a>
-        </div>
+        </ul>
       </div>
-
+      <div class="page-footer__logo-academy logo-academy">
+        <a class="logo-academy__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="logo-academy__logo"> <img src="img/htmlacademy.svg" width="27" height="34" alt="логотип HTML Academy">
+        </a>
+      </div>
+    </div>
   </footer>
 
 </body>

@@ -11,15 +11,22 @@
   font-weight: normal;
   font-size: 36px;
   line-height: 40px;
-  margin-left: 20px;
+  margin: 0 0 40px 0;
 
   color: @base-color;
+
+  @media (min-width:@tablet-width) {
+    margin: 15px 0 30px 0;
+  }
+
+  @media (min-width:@desktop-width) {
+    margin: 0px 0 30px 0;
+  }
 }
 
 .advantage__list {
   list-style: none;
-  width: 320px;
-  margin: 0 20px 20px 0;
+  padding: 0;
 }
 
 .advantage__item {
@@ -28,9 +35,65 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
-  margin: 0 22px 24px 80px;
+  margin: 0 0 22px 80px;
+  position: relative;
+
+  @media (min-width:@tablet-width) {
+    width: 250px;
+    display: flex;
+  }
+
+  @media (min-width:@desktop-width) {}
 }
 
 .advantage__item:last-child {
   margin-bottom: 42px;
+}
+
+.advantage__item--leaf-icon::before {
+  content: "";
+  background-image: url("../img/advantage-leaf@1x.png");
+  background-color: #68B738;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: -80px;
+}
+
+.advantage__item--powder-icon::before {
+  content: "";
+  background-image: url("../img/advantage-powder@1x.png");
+  background-color: #68B738;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: -80px;
+}
+
+.advantage__item--dining-icon::before {
+  content: "";
+  background-image: url("../img/advantage-dining@1x.png");
+  background-color: #68B738;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: -80px;
+}
+
+.advantage__item--clock-icon::before {
+  content: "";
+  background-image: url("../img/advantage-clock@1x.png");
+  background-color: #68B738;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: -80px;
 }
