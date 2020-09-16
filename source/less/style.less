@@ -1,10 +1,15 @@
 @import "imports.less";
-/* нужен этот стиль?
-html,
-body {
-  height: 100%;
+
+html {
+  box-sizing: border-box;
 }
-*/
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 /*фиксация при скроле, позже добавлю тк поднимается img кот
 header {
   position: fixed;
@@ -20,15 +25,32 @@ body {
   font-size: 14px;
   line-height: 18px;
   color: #444444;
-  text-transform: lowercase;
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
   min-width: 320px;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 a {
   text-decoration: none;
+}
+
+h1 {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin: 0;
 }
 
 .button {
@@ -62,4 +84,43 @@ a {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+  min-width: 320px;
+
+  @media (min-width:@tablet-width) {
+    max-width: 708px;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+
+  @media (min-width:@desktop-width) {
+    max-width: 1220px;
+    padding: 0 55px;
+    margin: 0 auto;
+  }
+}
+
+.container-img {
+  display: block;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  min-width: 320px;
+
+  @media (min-width:@tablet-width) {
+    max-width: 768px;
+    margin: 0 auto;
+    /* тут будет замена картинки позже */
+  }
+
+  @media (min-width:@desktop-width) {
+    max-width: 1330px;
+    margin: 0 auto;
+    /* тут будет замена картинки позже */
+  }
 }

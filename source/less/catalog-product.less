@@ -7,17 +7,17 @@
   margin: 0;
 }
 
+.catalog-product__product {
+  margin-bottom: 22px;
+}
+
 .catalog-product__title {
   font-family: "oswaldregular", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
   line-height: 36px;
-  margin-bottom: 49px;
-  margin-top: 27px;
-  margin-left: 20px;
-  margin-right: 42px;
-
+  margin: 30px 0 50px 0;
   color: @base-color;
 }
 
@@ -48,4 +48,26 @@
   width: 140px;
   height: 112px;
   object-fit: contain;
+}
+
+.catalog-product__bloc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.catalog-product__wrape {
+  display: flex;
+  flex-direction: column;
+  max-width: 140px;
+}
+
+.catalog-product__table {
+  max-width: 140px;
+}
+
+.catalog-product-order {
+  display: block;
+  align-items: center;
+  padding: 12px 0;
 }
