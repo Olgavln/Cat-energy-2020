@@ -2,31 +2,104 @@
   display: flex;
   flex-direction: column;
   background-color: #f2f2f2;
+
+  @media (min-width:@tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width:@desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .page-footer {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  width: 320px;
-  height: 720px;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
 }
 
 .page-footer__contacts {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   background-color: #ffffff;
+  min-height: 115px;
+  align-items: center;
+
+  @media (min-width:@tablet-width) {
+    min-height: 200px;
+  }
+
+  @media (min-width:@desktop-width) {
+    width: 570px;
+    /*не работает почему?*/
+  }
 }
 
 .page-footer__map {
-  width: 320px;
-  /*на макете отличается карта*/
-  height: 362px;
+  padding: 0;
+  /* что то с контейнером*/
 }
 
 .page-footer__logo {
-  margin-top: 40px;
-  margin-left: 96px;
-  margin-bottom: 52px;
+  text-align: center;
+  margin: 40px 0 52px 0;
+  position: relative;
+}
+
+.page-footer__logo-academy {
+  max-width: 280px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 43px 0 22px 0;
+
+  @media (min-width:@tablet-width) {
+    max-width: 165px;
+  }
+
+  @media (min-width:@desktop-width) {
+    max-width: 165px;
+  }
+}
+
+.page-footer__logo::after {
+  content: "";
+  border-bottom: 1px solid #d9d9d9;
+  position: absolute;
+  left: -0px;
+  top: 60px;
+  margin: 0 0 40px 0;
+  width: 100%;
+  bottom: 0;
+
+  @media (min-width:@tablet-width) {
+    display: none;
+  }
+
+  @media (min-width:@desktop-width) {
+    display: none;
+  }
+}
+
+.page-footer__logo::before {
+  content: "";
+  border-bottom: 1px solid #d9d9d9;
+  position: absolute;
+  left: -0px;
+  top: 130px;
+  margin: 0 0 40px 0;
+  width: 100%;
+  bottom: 0;
+
+  @media (min-width:@tablet-width) {
+    display: none;
+  }
+
+  @media (min-width:@desktop-width) {
+    display: none;
+  }
 }

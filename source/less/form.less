@@ -152,6 +152,11 @@ textarea[type="text"] {
   color: #222222;
 }
 
+.form__value--label {
+  margin-left: 46px;
+  margin-right: 125px;
+}
+
 /*почему не работает? */
 .form__value:nth-child(3) {
   margin-bottom: 47px;
@@ -216,32 +221,12 @@ textarea[type="text"] {
   margin-left: -15px;
 }
 
-/*почему не работает
-.form__add-product:hover + label {
-  color: #000000;
-}
-*/
-.form__add-product:hover,
-.form__add-product:focus {
+
+.form__add-label:hover .form__value,
+.form__add-label:focus .form__value {
   color: #000000;
 }
 
-.form__add-product:active {
+.form__add-label:active .form__value {
   opacity: 0.3;
-}
-
-/* присваивается всем - что есть не по макету
-.form__value:hover,
-.form__value:hover {
-  color: #000000;
-}
-
-.form__value:active {
-  opacity: 0.3;
-}
-*/
-
-.form-imput {
-  margin-left: 46px;
-  margin-right: 125px;
 }
