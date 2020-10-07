@@ -1,15 +1,15 @@
-.additional-item__unit {
+.additional-item__title {
   font-family: "oswaldregular", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 16px;
-
-  text-align: center;
-
+  padding-top: 15px;
+  margin: 0 0 15px 0;
   text-transform: uppercase;
-
   color: #222222;
+
+  border-top: 1px solid #cdcdcd;
 }
 
 .additional-item__quantity,
@@ -19,11 +19,27 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 14px;
-
-  align-items: center;
-  text-align: center;
 }
 
-.additional-item__price {
+/*.additional-item__price {
   text-align: right;
+}*/
+
+.additional-item__wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.additional-item__order {
+  display: block;
+  align-items: center;
+  padding: 12px 0;
+  margin-bottom: 20px;
+
+  &:nth-child(4) {
+    margin-bottom: 40px;
+  }
+
+  /*не работает , а :last-child устанавливает 40 на все кнопки*/
 }

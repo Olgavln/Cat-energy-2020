@@ -1,24 +1,97 @@
-.product-more__show {
+.product-more {
+  position: relative;
+  border-top: 1px solid #e6e6e6;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    ign-content: start;
+    padding-bottom: 40px;
+    margin-bottom: 140px;
+    border: 2px solid #f2f2f2;
+    border-top: none;
+  }
+}
+
+.product-more__title {
   font-family: "oswaldregular", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
-
   text-align: center;
   text-transform: uppercase;
-
+  padding: 90px 0 10px 0;
   color: #111111;
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: 125px;
+    width: 30px;
+    height: 2px;
+    background-color: #d3d3d3;
+  }
+
+  &::before {
+    transform: rotate(90deg);
+  }
+
+  &::after {
+    transform: rotate(-180deg);
+  }
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    font-size: 20px;
+    line-height: 22px;
+    width: 134px;
+    margin: auto;
+    padding: 160px 0 25px 0;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 85px;
+      left: 35px;
+      width: 60px;
+      height: 2px;
+      background-color: #d3d3d3;
+    }
+
+    &::before {
+      transform: rotate(90deg);
+    }
+
+    &::after {
+      transform: rotate(-180deg);
+    }
+  }
 }
 
 .product-more__legend {
+  display: block;
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 16px;
+  padding-bottom: 20px;
 
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    width: 167px;
+    margin: 0 auto 0 auto;
+
+    font-size: 16px;
+    line-height: 18px;
+  }
 }
 
 .product-more__to-all {
@@ -32,4 +105,9 @@
   text-transform: uppercase;
   border: none;
   transition: 0.5s;
+
+  @media (min-width: @tablet-width) {
+    width: 248px;
+    margin: 0 auto 40px auto;
+  }
 }

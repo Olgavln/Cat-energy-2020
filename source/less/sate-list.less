@@ -1,73 +1,98 @@
 .site-list__item {
   font-family: "oswaldregular", "Arial", sans-serif;
   font-size: 20px;
-  font-weight: 500;
-  margin-bottom: 46px;
+  line-height: 20px;
+  /*font-weight: 500; почему не сработало?*/
+  font-weight: bold;
   position: relative;
+  text-align: center;
 
   text-transform: uppercase;
 
-  @media (min-width:@tablet-width) {
-    margin: 0;
+  @media (min-width: @tablet-width) {
+    margin-left: 34px;
     font-size: 18px;
     line-height: 24px;
+    font-weight: normal;
+    text-align: right;
 
+    &:nth-child(1) {
+      margin-left: 0;
+    }
 
+    &--active {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        background: #68b738;
+      }
+    }
   }
 
-  @media (min-width:@desktop-width) {
-    margin: 0;
+  @media (min-width: @desktop-width) {
     font-size: 20px;
     line-height: 30px;
   }
-}
 
-.site-list__item:last-child {
-  margin-bottom: 24px;
-
-  @media (min-width:@desktop-width) {
-    margin: 0;
-  }
-
-  @media (min-width:@tablet-width) {
-    margin: 0;
+  &::after {
+    background: #68b738;
+    /*#ffffff*/
   }
 }
 
-.site-list__item:hover,
-.site-list__item:focus,
-.site-list__item:active {
-  opacity: 0.5;
+.site-list__item a[href] {
+  @media (min-width: @tablet-width) {
+    &:hover :focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
 }
 
-.site-list__link {
+.site-list {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    /* width: 58%; /* 440px/768px = 58%    max-width: 824px; 478px/.58=824px    margin: 0 auto;    как сделать резиновое меню навигации? - не поняла*/
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 478px;
+  }
+}
+
+.site-list a {
+  position: relative;
+  display: block;
+  padding: 0;
+  padding-top: 22px;
+  padding-bottom: 24px;
   color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-top: 1px solid #e6e6e6;
 }
 
-.site-list__link:hover {
-  opacity: 0.6;
-}
-
-.site-list__link:active {
-  opacity: 0.3;
-}
-
-.site-list__link--active {
-  border-bottom: 2px solid #68b738;
-  align-self: center;
-  padding-bottom: 8px;
-}
-
-.site-list__link::after {
-  content: "";
-  position: absolute;
-  left: -20px;
-  border: 1px solid #e6e6e6;
-  margin: 0 0 40px 0;
-  width: 320px;
-  bottom: 0;
-
-  @media (min-width:@tablet-width) {
+@media (max-width: @mobile-width-only) {
+  .main-nav--closed .site-list__item {
     display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .site-list a {
+    padding: 0;
+    padding-bottom: 23px;
+    border-top: none;
   }
 }

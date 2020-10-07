@@ -1,4 +1,5 @@
 .product-aside__title {
+  position: relative;
   font-family: "oswaldregular", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -6,7 +7,20 @@
   font-size: 24px;
   line-height: 24px;
 
-  text-align: center;
+  margin: 0;
+  padding: 22px 0 35px 0;
+  margin-top: 22px;
 
   color: @base-color;
+  border-top: 1px solid #e6e6e6;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 55px;
+    right: 0;
+    top: 35px;
+    height: 2px;
+    background: #68b738;
+  }
 }

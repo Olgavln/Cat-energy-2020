@@ -2,12 +2,11 @@
 
 html {
   box-sizing: border-box;
-}
 
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
+  &::before,
+  &::after {
+    box-sizing: inherit;
+  }
 }
 
 /*фиксация при скроле, позже добавлю тк поднимается img кот
@@ -44,10 +43,12 @@ h1 {
   margin: 0;
 }
 
-ul {
+li {
   padding: 0;
   margin: 0;
 }
+
+/* не применяется */
 
 p {
   margin: 0;
@@ -92,13 +93,13 @@ p {
   margin: 0 auto;
   min-width: 320px;
 
-  @media (min-width:@tablet-width) {
+  @media (min-width: @tablet-width) {
     max-width: 708px;
     padding: 0 30px;
     margin: 0 auto;
   }
 
-  @media (min-width:@desktop-width) {
+  @media (min-width: @desktop-width) {
     max-width: 1220px;
     padding: 0 55px;
     margin: 0 auto;
@@ -112,14 +113,14 @@ p {
   margin-left: auto;
   min-width: 320px;
 
-  @media (min-width:@tablet-width) {
+  @media (min-width: @tablet-width) {
     max-width: 768px;
     margin: 0 auto;
     /* тут будет замена картинки позже */
   }
 
-  @media (min-width:@desktop-width) {
-    max-width: 1330px;
+  @media (min-width: @desktop-width) {
+    max-width: 1440px;
     margin: 0 auto;
     /* тут будет замена картинки позже */
   }

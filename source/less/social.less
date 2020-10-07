@@ -44,6 +44,10 @@
 .social__list {
   max-width: 130px;
   position: relative;
+
+  @media (min-width: @tablet-width) {
+    min-width: 130px;
+  }
 }
 
 .social__wraper {
@@ -53,4 +57,10 @@
   flex-wrap: wrap;
   position: relative;
   left: 40px;
+  /*ломается при увеличении окна*/
+
+  @media (min-width: @tablet-width) {
+    left: 0;
+    top: 40px;
+  }
 }

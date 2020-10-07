@@ -4,6 +4,11 @@
   flex-wrap: wrap;
 
   background: #eaeaea;
+
+  @media (min-width: @tablet-width) {
+    background-color: #ffffff;
+    border-top: 1px solid #e6e6e6;
+  }
 }
 
 .example__title {
@@ -14,6 +19,12 @@
   line-height: 40px;
   color: @base-color;
   margin: 27px 0 33px 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 45px 0 65px 0;
+  }
 }
 
 .example__description {
@@ -24,4 +35,11 @@
   line-height: 18px;
   width: 279px;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 55px;
+  }
 }

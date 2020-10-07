@@ -5,6 +5,10 @@
   width: 280px;
   margin: 0;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    width: 365px;
+  }
 }
 
 .result__index {
@@ -13,9 +17,14 @@
   position: relative;
   align-items: center;
   margin-top: 25px;
-  border: 1px solid #CDCDCD;
+  border: 1px solid #cdcdcd;
   width: 124px;
   height: 56px;
+
+  @media (min-width: @tablet-width) {
+    width: 160px;
+    height: 70px;
+  }
 }
 
 .result__index-index {
@@ -27,6 +36,11 @@
   margin-top: 15px;
 
   color: @base-color;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .result__index-description {
@@ -40,6 +54,16 @@
   margin-top: 8px;
   margin-left: 10px;
   margin-right: 10px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+    background-color: #ffffff;
+    width: 140px;
+    margin-top: 10px;
+    /*не понимаю почему не работают маржины для отступа?*/
+    text-align: center;
+  }
 }
 
 .result__money {
@@ -54,4 +78,20 @@
   text-transform: uppercase;
 
   color: @base-color;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    width: 175px;
+    /*не уверена что верно*/
+    font-size: 20px;
+    line-height: 20px;
+    text-align: right;
+  }
+}
+
+.result__wrap {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
