@@ -9,6 +9,11 @@
   background-position: center;
   background-size: cover;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+  }
+
+
   @media (min-width: @tablet-width) {
     background-image: none;
     background-color: transparent;
@@ -16,8 +21,12 @@
   }
 
   @media (min-width: @desktop-width) {
-    background-image: none;
-    margin: 0 auto 0 135px;
+    background-color: #68b738;
+    background-image: url("../img/index-background-desktop@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+    }
   }
 }
 
@@ -35,8 +44,13 @@
     width: 415px;
     font-size: 60px;
     line-height: 60px;
-    margin: 0;
+    margin: 27px auto 25px 90px;
+
     color: #000000;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 auto 0 135px;
   }
 }
 
@@ -57,13 +71,13 @@
     font-size: 20px;
     line-height: 20px;
     color: #000000;
-    margin-top: 40px;
-    margin-bottom: 20px;
+    margin: 40px auto 0 90px;
+
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 40px;
-    margin-bottom: 50px;
+    margin: 40px auto 50px 135px;
+
   }
 }
 
@@ -79,6 +93,16 @@
   @media (min-width: @tablet-width) {
     width: 245px;
     height: 55px;
+    @intro-shift-buttom: -430px;
+
+    position: relative;
+    top: @intro-shift-buttom;
+    right: 90px;
+    margin-bottom: -90px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 160px auto 0 340px;
   }
 }
 
@@ -108,11 +132,27 @@
 .intro__img {
   display: block;
   margin: auto;
-  @intro-shift: -140px;
+  @intro-shift: -120px;
 
   position: relative;
   top: @intro-shift;
   margin-bottom: @intro-shift;
+
+  @media (min-width: @tablet-width) {
+    @intro-shift: -50px;
+
+    top: @intro-shift;
+    margin-bottom: @intro-shift;
+  }
+
+  @media (min-width: @desktop-width) {
+    @intro-shift: -350px;
+
+    top: @intro-shift;
+    margin-bottom: -300px;
+    right: -110px;
+    /* margin: -320px 280px 0 auto;*/
+  }
 }
 
 /* как правильно отступ сделать от блока выше?*/

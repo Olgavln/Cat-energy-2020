@@ -21,6 +21,10 @@
     line-height: 1;
     padding: 0;
   }
+
+  @media (min-width: @desktop-width) {
+    text-align: center;
+  }
 }
 
 .program__description {
@@ -64,21 +68,25 @@
 }
 
 .program__wraper {
-  width: 280px;
+  width: inherit;
   padding: 25px 0 25px 20px;
   margin-top: 20px;
 
   background-color: #f2f2f2;
 
   @media (min-width: @tablet-width) {
-    width: 708px;
     padding: 77px 0 55px 55px;
     margin-bottom: 30px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 570px;
     margin-bottom: 70px;
+    margin-right: 80px;
+    width: 570px;
+
+    &:nth-child(2) {
+      margin-right: 0;
+    }
   }
 }
 
@@ -87,6 +95,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 0;
   }
 }
 
@@ -106,23 +115,53 @@
   /*как сделать что бы картинка была больше чем бэкграунд*/
   background-repeat: no-repeat;
   background-position: 0 0;
+  width: 40px;
+  height: 50px;
+
+  position: absolute;
+  top: 30px;
+  left: 40px;
+
+  @media (min-width: @tablet-width) {
+    width: 140px;
+    height: 190px;
+    top: 100px;
+    left: 480px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 70px;
+    height: 100px;
+    position: absolute;
+    top: 60px;
+    left: 90px;
+  }
+}
+
+.program--slim-icon::before {
+  content: "";
   width: 50px;
   height: 50px;
   background-color: #68b738;
-  border-radius: 50px 50px;
-
+  border-radius: 50%;
   position: absolute;
-  top: 20px;
-  left: 40px;
+  top: 30px;
+  left: 30px;
 
   @media (min-width: @tablet-width) {
     width: 200px;
     height: 200px;
-    top: 110px;
-    left: 500px;
-    border-radius: 50%;
-    /* котик не полного размера...почему?*/
+    top: 115px;
+    left: 455px;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 100px;
+    height: 100px;
+    top: 70px;
+    left: 80px;
+  }
+
 }
 
 .program--pro-icon::after {
@@ -131,22 +170,54 @@
   /*как сделать что бы картинка была больше чем бэкграунд*/
   background-repeat: no-repeat;
   background-position: center;
-  background-color: #68b738;
-  border-radius: 50px 50px;
+  width: 70px;
+  height: 30px;
+  position: absolute;
+  top: 50px;
+  left: 10px;
+
+  @media (min-width: @tablet-width) {
+    width: 270px;
+    height: 110px;
+    top: 150px;
+    left: 420px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 135px;
+    height: 60px;
+    position: absolute;
+    top: 90px;
+    left: 40px;
+  }
+}
+
+.program--pro-icon::before {
+  content: "";
   width: 50px;
   height: 50px;
+  background-color: #68b738;
+  border-radius: 50%;
   position: absolute;
-  top: 30px;
-  left: 30px;
+  top: 40px;
+  left: 20px;
 
   @media (min-width: @tablet-width) {
     width: 200px;
     height: 200px;
-    top: 110px;
-    left: 500px;
-    border-radius: 50%;
-    /* котик не полного размера...почему?*/
+    top: 100px;
+    left: 455px;
   }
+
+  @media (min-width: @desktop-width) {
+    @media (min-width: @desktop-width) {
+      width: 100px;
+      height: 100px;
+      top: 70px;
+      left: 60px;
+    }
+  }
+
 }
 
 .program__description::after {
