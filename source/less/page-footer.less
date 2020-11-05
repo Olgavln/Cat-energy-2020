@@ -34,7 +34,14 @@
 
   @media (min-width: @desktop-width) {
     width: 570px;
-    /*не работает почему?*/
+    background-color: #ffffff;
+
+    @map-shift: -300px;
+
+    position: relative;
+    bottom: @map-shift;
+    left: 100px;
+    margin-top: @map-shift;
   }
 }
 

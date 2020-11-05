@@ -1,4 +1,3 @@
-/* не уверена что верно, еще почитаю..*/
 .result__wraper {
   display: flex;
   justify-content: space-between;
@@ -8,6 +7,10 @@
 
   @media (min-width: @tablet-width) {
     width: 365px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 55px;
   }
 }
 
@@ -24,6 +27,7 @@
   @media (min-width: @tablet-width) {
     width: 160px;
     height: 70px;
+    margin: 0;
   }
 }
 
@@ -47,6 +51,7 @@
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
+  display: block;
   font-size: 12px;
   line-height: 12px;
   width: 80px;
@@ -61,8 +66,12 @@
     background-color: #ffffff;
     width: 140px;
     margin-top: 10px;
-    /*не понимаю почему не работают маржины для отступа?*/
+    /*не понимаю почему не работают маржины для отступа слева и справа?*/
     text-align: center;
+
+    @media (min-width: @desktop-width) {
+      background-color: #f2f2f2;
+    }
   }
 }
 
@@ -86,6 +95,11 @@
     font-size: 20px;
     line-height: 20px;
     text-align: right;
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 325px;
   }
 }
 
@@ -93,5 +107,10 @@
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: column;
   }
 }
