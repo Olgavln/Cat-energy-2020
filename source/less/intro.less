@@ -13,7 +13,6 @@
     background-image: url("../img/index-background-mobile@2x.jpg");
   }
 
-
   @media (min-width: @tablet-width) {
     background-image: none;
     background-color: transparent;
@@ -22,12 +21,11 @@
 
   @media (min-width: @desktop-width) {
     margin: 0 auto 0 135px;
-    background-color: #68b738;
-    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-image: none; /*url("../img/index-background-desktop@1x.jpg");
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/index-background-desktop@2x.jpg");
-    }
+    }*/
   }
 }
 
@@ -42,9 +40,10 @@
   color: #ffffff;
 
   @media (min-width: @tablet-width) {
+    font-family: "oswaldregular", "Arial", sans-serif;
     width: 415px;
     text-align: left;
-    font-size: 60px;
+    font-size: 55px; /* по макету 60px но не помещается в контейнер*/
     line-height: 60px;
     margin: 27px auto 25px 0;
 
@@ -57,6 +56,7 @@
 }
 
 .intro__slogan {
+  position: relative;
   font-family: "oswaldregular", "Arial", sans-serif;
   font-size: 14px;
   line-height: 14px;
@@ -78,17 +78,16 @@
 
   @media (min-width: @desktop-width) {
     margin: 40px auto 50px 0;
-    }
+  }
 }
 
 .intro__button {
+  display: flex;
   width: 280px;
   height: 40px;
-  display: flex;
   align-items: center;
   justify-content: center;
   margin: auto;
-
 
   @media (min-width: @tablet-width) {
     width: 245px;
@@ -102,19 +101,45 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin: 160px auto 0 225px;
+    @intro-shift-buttom: -220px;
+    top: @intro-shift-buttom;
+    left: -460px;
+    margin-bottom: 40px;
   }
 }
 
 .intro-wraper {
+  position: relative;
+
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     margin-bottom: 20px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -230px;
+      right: 0;
+      width: 720px;
+      height: 700px;
+      background-size: cover;
+      background-image: url("../img/index-background-desktop@1x.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/index-background-desktop@2x.jpg");
+      }
+    }
+  }
 }
-/*@media (min-width: @tablet-width) {
+
+/*
+@media (min-width: @tablet-width) {
   .intro-wraper {
     display: flex;
     flex-direction: column;
@@ -125,12 +150,13 @@
 
 @media (min-width: @desktop-width) {
   .intro-wraper {
+    position: relative;
     padding-left: 135px;
   }
+
 }*/
 
 .intro__img {
-  display: block;
   margin: auto;
 
   @intro-shift: -120px;
@@ -147,11 +173,11 @@
   }
 
   @media (min-width: @desktop-width) {
-    @intro-shift: -350px;
+    @intro-shift: -360px;
 
     top: @intro-shift;
-    margin-bottom: -300px;
-    right: -110px;
+    margin-bottom: @intro-shift;
+    right: -560px;
     /* margin: -320px 280px 0 auto;*/
   }
 }

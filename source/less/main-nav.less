@@ -29,7 +29,6 @@
   left: auto;
   right: 20px;
 
-
   &::before {
     content: "";
     position: absolute;
@@ -87,7 +86,6 @@
   }*/
 }
 
-
 /* нет в стаилгайд .main-nav--closed .main-nav__toggle:active::before {
   background-color: fade(#000000, 30%);
   box-shadow:
@@ -96,11 +94,12 @@
 }*/
 
 .main-nav__list {
+  position: relative;
   list-style: none;
   padding: 0;
   margin: 0;
+  z-index: 10;
 }
-
 
 .main-nav__wrapper {
   @media (min-width: @tablet-width) {
