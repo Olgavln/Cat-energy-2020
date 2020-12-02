@@ -1,4 +1,5 @@
 .example {
+  position: relative;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -17,7 +18,7 @@
 
 .example__wrap {
   @media (min-width: @desktop-width) {
-    @example-shift: -205px;
+    @example-shift: -230px;
 
     position: relative;
     top: @example-shift;
@@ -32,7 +33,7 @@
   font-size: 36px;
   line-height: 40px;
   color: @base-color;
-  margin: 27px 0 33px 0;
+  margin: 30px 0 30px 0;
 
   @media (min-width: @tablet-width) {
     font-size: 60px;
@@ -41,7 +42,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin: 70px 0 75px 0;
+    margin: 80px 0 95px 0;
   }
 }
 
@@ -66,6 +67,6 @@
   @media (min-width: @desktop-width) {
     max-width: 435px;
     background-color: #f2f2f2;
-    padding-top: 70px;
+    padding: 50px 0 70px 0;
   }
 }

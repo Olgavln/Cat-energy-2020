@@ -17,32 +17,9 @@
 }
 
 .page-footer {
+  position: relative;
   background-color: #ffffff;
   /*как сделать чтобы на стр каталога был цвет #F2F2F2?*/
-}
-
-.page-footer__contacts {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  min-height: 115px;
-  align-items: center;
-
-  @media (min-width: @tablet-width) {
-    min-height: 200px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 570px;
-    background-color: #ffffff;
-
-    @map-shift: -300px;
-
-    position: relative;
-    bottom: @map-shift;
-    left: 100px;
-    margin-top: @map-shift;
-  }
 }
 
 .page-footer__map {
@@ -50,10 +27,15 @@
   /* что то с контейнером*/
 }
 
-.page-footer__logo {
+.page-footer__logo,
+.page-footer__logotip {
   text-align: center;
-  margin: 40px 0 52px 0;
+  margin: 40px 0 20px 0;
   position: relative;
+
+  @media (min-width: @tablet-width) {
+    margin: 55px 0;
+  }
 }
 
 .page-footer__logo-academy {
@@ -69,6 +51,14 @@
 
   @media (min-width: @desktop-width) {
     max-width: 165px;
+  }
+}
+
+.page-footer__social {
+  margin: 30px 0 5px 0;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
   }
 }
 

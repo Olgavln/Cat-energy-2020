@@ -46,22 +46,6 @@
     </div>
 
   </header>
-  <script>
-    var navMain = document.querySelector('.main-nav');
-    var navToggle = document.querySelector('.main-nav__toggle');
-
-    navMain.classList.remove('main-nav--nojs');
-
-    navToggle.addEventListener('click', function () {
-      if (navMain.classList.contains('main-nav--closed')) {
-        navMain.classList.remove('main-nav--closed');
-        navMain.classList.add('main-nav--opened');
-      } else {
-        navMain.classList.add('main-nav--closed');
-        navMain.classList.remove('main-nav--opened');
-      }
-    });
-  </script>
 
   <main class="page-main">
     <div class="intro-wraper">
@@ -116,63 +100,71 @@
 
     <section class="example container">
       <div class="example__wrap">
-      <h2 class="example__title">Живой пример</h2>
-      <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
-        Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по
-        16
-        часов в день. </p>
+        <h2 class="example__title">Живой пример</h2>
+        <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
+          Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по
+          16
+          часов в день. </p>
 
-      <div class="result__wrap">
-        <div class="result__wraper">
-          <div class="result__index">
-            <b class="result__index-index"> 5 КГ</b>
-            <small class="result__index-description">снижение веса</small>
-          </div>
+        <div class="result__wrap">
+          <div class="result__wraper">
+            <div class="result__index">
+              <b class="result__index-index"> 5 КГ</b>
+              <small class="result__index-description">снижение веса</small>
+            </div>
 
-          <div class="result__index">
-            <b class="result__index-index"> 60 ДНЕЙ</b>
-            <small class="result__index-description">затрачено времени</small>
+            <div class="result__index">
+              <b class="result__index-index"> 60 ДНЕЙ</b>
+              <small class="result__index-description">затрачено времени</small>
+            </div>
           </div>
-        </div>
-        <div class="rezult__paragraph-wraph">
+          <div class="rezult__paragraph-wraph">
             <p class="rezult__paragraph">
-              <div class="rezult__paragraph-price">Затраты на питание:</div>
-              <div class="rezult__paragraph-price">15 000 РУБ.</div>
+            <div class="rezult__paragraph-price">Затраты на питание:</div>
+            <div class="rezult__paragraph-price">15 000 РУБ.</div>
             </p>
+          </div>
         </div>
+    </section>
 
+    <div class="image-comparison">
+      <div class="image-comparison__before-after">
+        <img class="image-comparison__image" src="img/before-mobile@1x.png" width="535" height="365"
+          alt="кот до правильного питания">
+        <img class="image-comparison__image" src="img/after-mobile@1x.png" width="625" height="325"
+          alt="кот после правильного питания">
       </div>
 
-      <div class="image-comparison">
-        <div class="image-comparison__before-after">
-          <img class="image-comparison__image" src="img/before-mobile@1x.png" alt="кот до правильного питания">
-          <img class="image-comparison__image" src="img/after-mobile@1x.png" alt="кот после правильного питания">
-        </div>
-
+      <div class="image-comparison__wrap">
         <button class="image-comparison__slider">было</button>
         <div class="image-comparison__indicator">
           <div class="image-comparison__indicator-control "></div>
         </div>
+        <div class="image-comparison__range-togle"></div>
         <button class="image-comparison__slider">стало</button>
       </div>
     </div>
+    </div>
 
-    </section>
+
 
   </main>
 
   <footer class="page-footer">
-    <div class="page-footer__contacts contacts">
-      <p class="contacts__title">приглашаем к сотрудничеству дилеров!</p>
-      <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+    <div class="page-footer__contacts">
+      <div class="contacts">
+        <p class="contacts__title">приглашаем к сотрудничеству дилеров!</p>
+        <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      </div>
+      <picture>
+        <source media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.png, img/bg-map-desktop@2x.png 2x">
+        <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png, img/bg-map-tablet@2x.png 2x">
+        <img class="page-footer__map" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x"
+          alt="Офис Магазина ул. Большая Конюшенная, д. 19/8 Санкт-Петербур ">
+        <!--width="320" height="362"-->
+      </picture>
     </div>
-    <picture>
-      <source media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.png, img/bg-map-desktop@2x.png 2x">
-      <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png, img/bg-map-tablet@2x.png 2x">
-      <img class="page-footer__map" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x"
-        alt="Офис Магазина ул. Большая Конюшенная, д. 19/8 Санкт-Петербур ">
-      <!--width="320" height="362"-->
-    </picture>
+
     <div class="page-footer__wrapper container">
       <a class="page-footer__logo">
         <img src="img/logo-footer.svg" width="124" height="24" alt="Название магазина">
@@ -192,11 +184,8 @@
           </div>
         </ul>
       </div>
-      <div class="page-footer__logo-academy logo-academy">
-        <a class="logo-academy__link visually-hidden" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        <a class="logo-academy__logo"> <img src="img/logo_html.svg" width="165" height="35" alt="логотип HTML Academy">
-        </a>
-      </div>
+      <a class="page-footer__logotip" href="https://htmlacademy.ru/intensive/adaptive"> <img src="img/logo_html.svg"
+          width="165" height="35" alt="логотип HTML Academy"><span class="visually-hidden">HTML Academy</span></a>
     </div>
   </footer>
 

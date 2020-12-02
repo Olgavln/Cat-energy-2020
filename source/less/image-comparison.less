@@ -1,7 +1,13 @@
 .image-comparison {
+  position: relative;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  background-color: #eaeaea;
+
+  @media (min-width: @desktop-width) {
+    width: 690px;
+  }
 }
 
 /* уехали кнопки - непонимаю почему*/
@@ -11,11 +17,8 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
-
-  margin-right: 45px;
-  margin-left: 47px;
-  margin-top: 23px;
-  margin-bottom: 25px;
+  background-color: transparent;
+  margin: 0;
 
   text-transform: uppercase;
   border: none;
@@ -23,5 +26,87 @@
 }
 
 .image-comparison__image {
-  margin-bottom: 23px;
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    bottom: 200px;
+    left: 750px;
+  }
+}
+
+.image-comparison__wrap {
+  display: flex;
+  justify-content: space-around;
+  width: 235px;
+  padding-bottom: 30px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 590px;
+    padding-bottom: 65px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    bottom: 30px;
+    left: 700px;
+    z-index: 10;
+  }
+}
+
+.image-comparison__before-after {
+
+  @media (min-width: @desktop-width) {}
+}
+
+.image-comparison__indicator {
+  width: 85px;
+  background-color: #ffffff;
+  height: 14px;
+  border-radius: 6px;
+  border: 1px solid #CDCDCD;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    top: 7px;
+    width: 430px;
+    height: 6px;
+    border-radius: 6px;
+    border: none;
+
+    background-color: #dcdcdc;
+
+  }
+}
+
+.image-comparison__indicator-control {
+  width: 50%;
+  height: 8px;
+  border-radius: 8px;
+  margin: 3px;
+  background-color: #68b738;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.image-comparison__range-togle {
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    bottom: 63px;
+    width: 6px;
+    height: 6px;
+
+    background-color: #68b738;
+    border: 10px solid #ffffff;
+    border-radius: 50%;
+    drop-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16);
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    top: -3px;
+  }
 }

@@ -33,8 +33,7 @@
   font-family: "oswaldregular", "Arial", sans-serif;
   font-size: 36px;
   line-height: 36px;
-  width: 250px;
-  margin: 27px auto 25px auto;
+  margin: 25px auto 25px auto;
 
   text-align: center;
   color: #ffffff;
@@ -45,8 +44,7 @@
     text-align: left;
     font-size: 55px; /* по макету 60px но не помещается в контейнер*/
     line-height: 60px;
-    margin: 27px auto 25px 0;
-
+    margin: 0;
     color: #000000;
   }
 
@@ -61,7 +59,6 @@
   font-size: 14px;
   line-height: 14px;
   text-align: center;
-  margin-top: 25px;
   margin-bottom: 30px;
 
   text-transform: uppercase;
@@ -101,7 +98,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    @intro-shift-buttom: -220px;
+    @intro-shift-buttom: -190px;
     top: @intro-shift-buttom;
     left: -460px;
     margin-bottom: 40px;
@@ -115,7 +112,6 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin-bottom: 20px;
   }
 
   @media (min-width: @desktop-width) {
@@ -159,25 +155,27 @@
 .intro__img {
   margin: auto;
 
-  @intro-shift: -120px;
+  @intro-shift: -140px;
 
   position: relative;
   top: @intro-shift;
+  left: 20px;
   margin-bottom: @intro-shift;
 
   @media (min-width: @tablet-width) {
-    @intro-shift: -50px;
+    @intro-shift: -100px;
 
     top: @intro-shift;
     margin-bottom: @intro-shift;
+    left: 30px;
   }
 
   @media (min-width: @desktop-width) {
-    @intro-shift: -360px;
+    @intro-shift: -390px;
 
     top: @intro-shift;
     margin-bottom: @intro-shift;
-    right: -560px;
+    left: 555px;
     /* margin: -320px 280px 0 auto;*/
   }
 }

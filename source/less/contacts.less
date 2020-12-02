@@ -1,3 +1,24 @@
+.contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 115px;
+    align-items: center;
+  
+    @media (min-width: @tablet-width) {
+      min-height: 200px;
+    }
+  
+    @media (min-width: @desktop-width) {
+      width: 570px;
+      background-color: #ffffff;
+    
+      position: absolute;
+      top: 100px;
+      left: 75px;
+    }
+  }
+
 .contacts__title {
   font-family: "oswaldregular", "Arial", sans-serif;
   font-style: normal;

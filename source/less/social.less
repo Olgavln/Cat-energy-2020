@@ -6,6 +6,10 @@
   width: 23px;
   height: 16px;
   position: absolute;
+  
+  &:hover {
+    color: #b42d2d;
+  }
 }
 
 .social__link--instagram::after {
@@ -30,7 +34,8 @@
 
 .social__link {
   position: relative;
-  margin-bottom: 10px; /* что бы елементы не слипались при переполнении*/
+  margin-bottom: 10px;
+  /* что бы елементы не слипались при переполнении*/
 }
 
 .social__link:hover,
@@ -57,11 +62,11 @@
   justify-content: space-between;
   flex-wrap: wrap;
   position: relative;
-  left: 40px;
+  left: 20px;
   /*ломается при увеличении окна*/
 
   @media (min-width: @tablet-width) {
     left: 0;
-    top: 40px;
+    top: 50px;
   }
 }

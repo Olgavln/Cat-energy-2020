@@ -11,10 +11,10 @@
   cursor: pointer;
   border: none;
   background-color: transparent;
-  /* нет состояния в стаилгайд &:hover,
+  /*&:hover,
   &:active {
     background-color: #000000;
-   }*/
+   }*/ /* нет состояния в стаилгайд */
 }
 
 @media (min-width: @tablet-width) {
@@ -95,10 +95,11 @@
 
 .main-nav__list {
   position: relative;
+  z-index: 10;
   list-style: none;
   padding: 0;
   margin: 0;
-  z-index: 10;
+  transition: ease 1s all;
 }
 
 .main-nav__wrapper {
