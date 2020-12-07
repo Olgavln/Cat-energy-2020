@@ -1,9 +1,14 @@
 .bonus {
   background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  min-width: 320px;
   height: 290px; /*не уверена что верно*/
+  margin-bottom: 35px;
 }
 
 .bonus__text {
+  position: relative;
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -15,4 +20,16 @@
   text-align: center;
 
   color: #ffffff;
+
+  &::before {
+    content: "";
+    background-image: url("../img/icon_gift.svg");
+    background-repeat: no-repeat;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 60px;
+  left: 40px;
+
+  }
 }
