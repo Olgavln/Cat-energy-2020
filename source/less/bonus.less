@@ -5,6 +5,12 @@
   min-width: 320px;
   height: 290px; /*не уверена что верно*/
   margin-bottom: 35px;
+
+  @media (min-width: @tablet-width) {
+    background-image: url(../img/gift-photo-tablet@1x.jpg);
+    height: 200px;
+    margin-bottom: 75px;
+  }
 }
 
 .bonus__text {
@@ -31,5 +37,16 @@
   top: 60px;
   left: 40px;
 
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    margin: 70px 0 70px 425px;
+    text-align: left;
+
+    &::before {
+      top: -10px;
+  left: -315px;
+    }
   }
 }

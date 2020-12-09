@@ -23,4 +23,33 @@
     height: 2px;
     background: #68b738;
   }
+
+  @media (min-width: @tablet-width) {
+    border-top: none;
+    padding: 0;
+    margin: 70px auto 80px 70px;
+    font-size: 36px;
+  line-height: 36px;
+
+  &::after {
+    width: 330px;
+    top: 25px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    left: -70px;
+    top: 25px;
+    height: 2px;
+    background: #68b738;
+  }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .product-aside {
+    margin-bottom: 70px;
+  }
 }

@@ -5,11 +5,19 @@
   font-size: 16px;
   line-height: 16px;
   padding-top: 15px;
-  margin: 0 0 15px 0;
+  margin-bottom: 15px;
   text-transform: uppercase;
   color: #222222;
 
   border-top: 1px solid #cdcdcd;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+  line-height: 20px;
+  border: none;
+  }
 }
 
 .additional-item__quantity,
@@ -21,6 +29,11 @@
   line-height: 14px;
 }
 
+@media (min-width: @tablet-width) {
+  .additional-item__price {
+    margin-left: 50px;
+  }
+}
 /*.additional-item__price {
   text-align: right;
 }*/
@@ -29,6 +42,11 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 15px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
+
 }
 
 .additional-item__order {
@@ -39,8 +57,11 @@
 
   &:nth-child(4) {
     margin-bottom: 40px;
+  } /*не работает , а :last-child устанавливает 40 на все кнопки*/
+
+  @media (min-width: @tablet-width) {
+       margin-bottom: 30px;
   }
-/*не работает , а :last-child устанавливает 40 на все кнопки*/
 }
 
 .additional-item:last-child {
@@ -51,5 +72,25 @@
     height: 1px;
     background-color:  #e6e6e6;
     margin-bottom: 40px;
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
+}
+
+.additional-item__wrape {
+
+  @media (min-width: @tablet-width) {
+  border: 1px solid #cdcdcd;
+  padding: 0 40px;
+  }
+}
+
+.additional-item__flex {
+  @media (min-width: @tablet-width) {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
   }
 }
