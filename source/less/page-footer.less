@@ -19,12 +19,15 @@
 .page-footer {
   position: relative;
   background-color: #ffffff;
-  /*как сделать чтобы на стр каталога был цвет #F2F2F2?*/
+
+  @media (min-width: @desktop-width) {
+    margin-top: 85px;
+  }
 }
 
 .page-footer__map {
+  display: block;
   padding: 0;
-  /* что то с контейнером*/
 }
 
 .page-footer__logo,
@@ -97,5 +100,22 @@
 
   @media (min-width: @desktop-width) {
     display: none;
+  }
+}
+
+.page-footer__contacts {
+  @media (min-width: @desktop-width) {
+    position: relative;
+
+    &::after {
+      content: "";
+      background-image: url("../img/map-pin.png");
+      background-repeat: no-repeat;
+      position: absolute;
+      width: 106px;
+      height: 106px;
+      top: 135px;
+      right: 420px;
+    }
   }
 }

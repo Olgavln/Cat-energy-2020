@@ -15,8 +15,8 @@
     padding: 0;
     margin: 0;
     font-size: 20px;
-  line-height: 20px;
-  border: none;
+    line-height: 20px;
+    border: none;
   }
 }
 
@@ -34,6 +34,7 @@
     margin-left: 50px;
   }
 }
+
 /*.additional-item__price {
   text-align: right;
 }*/
@@ -51,16 +52,23 @@
 
 .additional-item__order {
   display: block;
-  align-items: center;
   padding: 12px 0;
   margin-bottom: 20px;
 
   &:nth-child(4) {
     margin-bottom: 40px;
-  } /*не работает , а :last-child устанавливает 40 на все кнопки*/
+  }
+
+  /*не работает , а :last-child устанавливает 40 на все кнопки*/
 
   @media (min-width: @tablet-width) {
-       margin-bottom: 30px;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 245px;
+    padding: 10px 0;
+    margin: 0 0 0 40px;
   }
 }
 
@@ -70,7 +78,7 @@
     display: block;
     width: 100%;
     height: 1px;
-    background-color:  #e6e6e6;
+    background-color: #e6e6e6;
     margin-bottom: 40px;
 
     @media (min-width: @tablet-width) {
@@ -82,15 +90,36 @@
 .additional-item__wrape {
 
   @media (min-width: @tablet-width) {
-  border: 1px solid #cdcdcd;
-  padding: 0 40px;
+    border: 1px solid #cdcdcd;
+    padding: 0 40px;
+    margin: -1px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+    padding: 15px 0;
+    border: none;
+    border-bottom: 1px solid #cdcdcd;
+
+    &:nth-child(1) {
+      border-top: 1px solid #cdcdcd;
+    }
   }
 }
 
+
 .additional-item__flex {
   @media (min-width: @tablet-width) {
-  display: flex;
-  justify-content: space-between;
-  margin: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 610px;
+    margin: 0;
+    padding: 10px 0;
   }
 }

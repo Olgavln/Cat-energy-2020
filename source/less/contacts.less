@@ -12,15 +12,19 @@
   @media (min-width: @desktop-width) {
     width: 570px;
     background-color: #ffffff;
-
+      
     position: absolute;
-    top: 100px;
-    left: 75px;
+    top: 95px;
+    left: 110px;
   }
 }
 
 .contacts__color {
   background-color: #f2f2f2;
+
+  @media (min-width: @desktop-width) {
+    background-color: #ffffff;
+  }
 }
 
 .contacts__title {
@@ -59,4 +63,9 @@
     font-size: 16px;
     line-height: 20px;
   }
+}
+
+.contacts__text--botton {
+  display: block;
+  margin-bottom: 10px;
 }
