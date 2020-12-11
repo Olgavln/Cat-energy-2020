@@ -35,6 +35,19 @@
   }
 }
 
+@media (min-width: @desktop-width) {
+  .additional-item__price {
+    margin-left: 0;
+  }
+}
+
+.additional-item__quantity {
+  @media (min-width: @desktop-width) {
+    margin-right: auto;
+  }
+}
+
+
 /*.additional-item__price {
   text-align: right;
 }*/
@@ -48,18 +61,21 @@
     margin: 0;
   }
 
+  @media (min-width: @desktop-width) {
+    min-width: 290px;
+  }
 }
 
 .additional-item__order {
   display: block;
   padding: 12px 0;
   margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 20px;
 
   &:nth-child(4) {
     margin-bottom: 40px;
-  }
-
-  /*не работает , а :last-child устанавливает 40 на все кнопки*/
+  } /*не работает , а :last-child устанавливает 40 на все кнопки*/
 
   @media (min-width: @tablet-width) {
     margin-bottom: 30px;

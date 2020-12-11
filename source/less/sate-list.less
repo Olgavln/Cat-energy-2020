@@ -39,6 +39,11 @@
   @media (min-width: @desktop-width) {
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+.site-list__color {
+  @media (min-width: @desktop-width) {
 
     &::after {
       background: #ffffff;
@@ -48,12 +53,14 @@
 
 .site-list__item a[href] {
   @media (min-width: @tablet-width) {
-    &:hover :focus {
-     opacity: 0.6;
+
+    &:hover,
+    :focus {
+      opacity: 0.6;
     }
 
     &:active {
-     opacity: 0.3;
+      opacity: 0.3;
     }
   }
 }
@@ -81,6 +88,12 @@
   text-transform: uppercase;
   text-decoration: none;
   border-top: 1px solid #e6e6e6;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    padding-bottom: 23px;
+    border-top: none;
+  }
 }
 
 @media (max-width: @mobile-width-only) {
@@ -89,16 +102,8 @@
   }
 }
 
-@media (min-width: @tablet-width) {
-  .site-list a {
-    padding: 0;
-    padding-bottom: 23px;
-    border-top: none;
-  }
-
+.site-list__color a {
   @media (min-width: @desktop-width) {
-    .site-list a {
-      color: #ffffff;
-    }
+    color: #ffffff;
   }
 }

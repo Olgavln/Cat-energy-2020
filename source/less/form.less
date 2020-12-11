@@ -1,11 +1,16 @@
+.form {
+  display: block;
+}
+
 .form__data {
   border: none;
+  padding: 0;
 }
 
 .form__button {
   width: 280px;
   height: 40px;
-  margin: 34px 20px 21px 0;
+  margin: 34px auto 20px auto;
 }
 
 input[type="text"] {
@@ -145,7 +150,7 @@ textarea[type="text"] {
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  margin: 0 14px 13px 0;
+  
   position: relative;
   top: 15px;
 
@@ -154,7 +159,6 @@ textarea[type="text"] {
 
 .form__value--label {
   margin-left: 46px;
-  margin-right: 125px;
 }
 
 /*почему не работает? */
@@ -168,7 +172,7 @@ textarea[type="text"] {
   font-weight: normal;
   font-size: 24px;
   line-height: 26px;
-  margin: 27px 160px 34px 0;
+  margin: 30px auto 35px auto;
   position: relative;
 
   color: #000000;
@@ -191,8 +195,6 @@ textarea[type="text"] {
   flex-wrap: wrap;
   flex-direction: row;
   margin: 0 0 14px 0;
-
-  min-width: 280px;
 }
 
 .form__contact-input {
@@ -215,10 +217,6 @@ textarea[type="text"] {
 
 .form__data-radio:active {
   background-color: #68b738;
-}
-
-.form__data-item {
-  margin-left: -15px;
 }
 
 
