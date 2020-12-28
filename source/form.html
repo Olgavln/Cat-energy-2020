@@ -52,22 +52,25 @@
     <section class="selection container">
       <h1 class="selection__title">Подбор программы</h1>
       <p class="selection__text">Заполните анкету, и мы подберем <br>программу питания для вашего кота</p>
-      <form class="selection__form form" action="https://echo.htmlacademy.ru" method="post">
+      <form class="selection__form form" action="https://echo.htmlacademy.ru" method="POST">
         <fieldset class="form__data">
           <legend class="visually-hidden">Выбор программы</legend>
           <div class="form__data-item">
             <label class="form__data-value" for="name">
               <div class="form__value">ИМЯ:*</div>
-              <input class="form__data-text" id="name" type="text" name="name" value="" placeholder="БАРСИК">
+              <input class="form__data-text" id="name" type="text" name="animal_name" value="" placeholder="БАРСИК"
+                pattern="[A-Za-zА-Яа-яЁё]{1,15}">
             </label>
 
             <label class="form__data-value" for="weight">
-              <div class="form__value">Вес (кг):*</div>
-              <input class="form__data-text" id="weight" type="text" name="weight" value="" placeholder="7">
+              <div class="form__value">Вес&nbsp;(кг):*</div>
+              <input class="form__data-text" id="weight" type="text" name="animal_weight" value="" placeholder="7"
+                pattern="^[ 0-9]+$">
             </label>
             <label class="form__data-value" for="age">
-              <div class="form__value">Возраст (лет):</div>
-              <input class="form__data-text" id="age" type="text" name="age" value="" placeholder="7">
+              <div class="form__value">Возраст&nbsp;(лет):</div>
+              <input class="form__data-text" id="age" type="text" name="animal_age" value="" placeholder="7"
+                pattern="^[ 0-9]+$">
             </label>
           </div>
 
@@ -75,19 +78,22 @@
             <div class="form__data-choice">
               <label class="form__data-value" for="thin">
                 <input class="form__data-radio" id="thin" type="radio" name="program" value="похудение" checked>
-                <div class="form__value">похудение</div>
+                <span class="form__data-radiostyle"> </span>
+                <div class="form__value form__value--program">похудение</div>
               </label>
 
               <label class="form__data-value" for="full">
                 <input class="form__data-radio" id="full" type="radio" name="program" value="Набор массы">
-                <div class="form__value">Набор массы</div>
-
+                <span class="form__data-radiostyle"> </span>
+                <div class="form__value form__value--program">Набор массы</div>
               </label>
 
               <label class="form__data-value" for="advice">
                 <input class="form__data-radio" id="advice" type="radio" name="program"
                   value="Не знаю (Нужен ваш совет)">
-                <div class="form__value">Не
+                <span class="form__data-radiostyle"> </span>
+
+                <div class="form__value form__value--program">Не
                   знаю (Нужен ваш совет)</div>
               </label>
             </div>
@@ -96,20 +102,26 @@
 
         <div class="form__contact">
           <h2 class="form__contact-title">Контактные данные (владельца кота)</h2>
-          <label class="form__contact-input" for="email">
-            <div class="form__value">Email *</div><input class="form__contact-email" id="email" type="email"
-              name="email" placeholder="kuklachev@gmail.com" required>
-          </label>
+          <div class="form__value-icon">
+            <label class="form__contact-input" for="email">
+              <div class="form__value">E-mail:&nbsp;<sup>*</sup> </div>
+              <input class="form__contact-email" id="email" type="email" name="user_email"
+                placeholder="kuklachev@gmail.com" required>
+            </label>
+          </div>
 
-          <label class="form__contact-input" for="Phone">
-            <div class="form__value">Phone *</div> <input class="form__contact-phone" id="Phone" type="tel" name="Phone"
-              placeholder="8 (960) 900-60-90" required>
-          </label>
+          <div class="form__value-icon">
+            <label class="form__contact-input" for="Phone">
+              <div class="form__value">Phone:&nbsp;<sup>*</sup> </div>
+              <input class="form__contact-phone" id="Phone" type="tel" name="user_phone" placeholder="8 (960) 900-60-90"
+                required>
+            </label>
+          </div>
         </div>
 
         <h2 class="form__title-coment">Комментарий </h2>
         <label class="form__coment" for="coment">
-          <textarea class="form__text" id="coment" type="text" name="coment"
+          <textarea class="form__text" id="coment" type="text" name="user_coment"
             placeholder="Расскажите обо всех повадках кота" rows="5"></textarea>
         </label>
 
@@ -119,23 +131,25 @@
             <label class="form__add-label" for="filter-sweetener">
               <div class="form__value form__value--label">сахарозаменитель</div>
               <input class="form__add-product" id="filter-sweetener" type="checkbox" name="сахарозаменитель" checked>
+              <span class="form__add-checkbox"> </span>
             </label>
 
             <label class="form__add-label" for="filter-water">
               <div class="form__value form__value--label">питьевая вода</div>
               <input class="form__add-product" id="filter-water" type="checkbox" name="питьевая вода">
-
+              <span class="form__add-checkbox"> </span>
             </label>
 
             <label class="form__add-label" for="filter-milk">
               <div class="form__value form__value--label">молоко</div>
               <input class="form__add-product" id="filter-milk" type="checkbox" name="молоко">
-
+              <span class="form__add-checkbox"> </span>
             </label>
 
             <label class="form__add-label" for="filter-vitamins">
               <div class="form__value form__value--label">витамины</div>
               <input class="form__add-product" id="filter-vitamins" type="checkbox" name="витамины">
+              <span class="form__add-checkbox"> </span>
             </label>
           </div>
         </div>
@@ -149,19 +163,19 @@
   </main>
   <footer class="page-footer">
     <div class="page-footer__contacts">
-      <div class="contacts">
+      <div class="contacts contacts__color">
         <p class="contacts__title">приглашаем к сотрудничеству дилеров!</p>
         <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
       <picture>
         <source media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.png, img/bg-map-desktop@2x.png 2x">
         <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png, img/bg-map-tablet@2x.png 2x">
-        <img class="page-footer__map" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x"
+        <img class="page-footer__map" src="img/bg-map-mobile1@1x.png" srcset="img/bg-map-mobile@2x.png 2x"
           alt="Офис Магазина ул. Большая Конюшенная, д. 19/8 Санкт-Петербур ">
         <!--width="320" height="362"-->
       </picture>
     </div>
-        
+
     <div class="page-footer__wrapper container">
       <a class="page-footer__logo">
         <img src="img/logo-footer.svg" width="124" height="24" alt="Название магазина">
@@ -180,10 +194,11 @@
             </li>
           </div>
         </ul>
-      </div>        
-      <a class="page-footer__logotip" href="https://htmlacademy.ru/intensive/adaptive"> <img src="img/logo_html.svg" width="165" height="35" alt="логотип HTML Academy"><span class="visually-hidden">HTML Academy</span></a>
       </div>
-      </footer>
+      <a class="page-footer__logotip" href="https://htmlacademy.ru/intensive/adaptive"> <img src="img/logo_html.svg"
+          width="165" height="35" alt="логотип HTML Academy"><span class="visually-hidden">HTML Academy</span></a>
+    </div>
+  </footer>
 
   <script>
     var navMain = document.querySelector('.main-nav');
