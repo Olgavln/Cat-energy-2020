@@ -1,4 +1,4 @@
-.social__link--vkontakte::after {
+/*.social__link--vkontakte::after {
   content: "";
   background-image: url("../img/icon-vk.svg");
   background-repeat: no-repeat;
@@ -70,11 +70,30 @@
   top: 10px;
   }
 }
+*/
+.social__item-icon {
+  fill: transparent;
+  width: 23px;
+  height: 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 30px;
+    height: 28px;
+  }
+
+  &:hover {
+    fill: #68b738;
+    stroke: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
 
 .social__link {
   position: relative;
   margin-bottom: 10px;
-  /* что бы елементы не слипались при переполнении*/
 }
 
 .social__link:hover,
@@ -89,6 +108,8 @@
 .social__list {
   max-width: 130px;
   position: relative;
+  padding: 0;
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
     min-width: 130px;
@@ -101,11 +122,8 @@
   justify-content: space-between;
   flex-wrap: wrap;
   position: relative;
-  left: 20px;
-  /*ломается при увеличении окна*/
 
   @media (min-width: @tablet-width) {
-    left: 0;
-    top: 50px;
+    margin: 60px 0;
   }
 }
