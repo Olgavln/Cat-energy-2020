@@ -36,6 +36,7 @@
   text-align: center;
   margin: 40px 0 0 0;
   position: relative;
+  transition: 0.3s;
 
   @media (min-width: @tablet-width) {
     margin: 60px 0;
@@ -135,10 +136,12 @@
   width: 30px;
   height: 35px;
   margin-left: auto;
+  fill: #666666;
+  transition: 0.3s;
 
-  &:hover {
+  &:hover,
+  :focus {
     fill: #68b738;
-    stroke: #68b738;
   }
 
   &:active {
@@ -147,6 +150,7 @@
 }
 
 .page-footer__html {
+  fill: #444444;
   width: 115px;
   height: 35px;
 
@@ -158,8 +162,10 @@
 .page-footer__logoname {
   width: 130px;
   height: 25px;
+  transition: 0.3s;
 
-  &:hover {
+  &:hover,
+  :focus {
     opacity: 0.8;
   }
 

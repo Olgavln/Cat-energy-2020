@@ -6,8 +6,7 @@
   width: 23px;
   height: 16px;
   position: absolute;
-  
-  &:hover {
+    &:hover {
     color: green;
   }
 
@@ -72,7 +71,6 @@
 }
 */
 .social__item-icon {
-  fill: transparent;
   width: 23px;
   height: 20px;
 
@@ -80,25 +78,11 @@
     width: 30px;
     height: 28px;
   }
-
-  &:hover {
-    fill: #68b738;
-    stroke: #68b738;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
 }
 
 .social__link {
   position: relative;
   margin-bottom: 10px;
-}
-
-.social__link:hover,
-.social__link:focus {
-  color: #696969;
 }
 
 .social__item {
@@ -125,5 +109,33 @@
 
   @media (min-width: @tablet-width) {
     margin: 60px 0;
+  }
+}
+
+.social__link--facebook {
+  fill: transparent;
+  stroke: #666666;
+  transition: 0.3s;
+
+  &:hover {
+    stroke: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.social__link--instagram,
+.social__link--vkontakte {
+  transition: 0.3s;
+  fill: #666666;
+
+  &:hover {
+    fill: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
