@@ -66,6 +66,12 @@
     display: inline-block;
   }
 
+  &:hover::after {
+    background-image: url("../img/icon-right-arrow-long-big.svg");
+    width: 32px;
+    transition: .2s;
+  }
+
   &:active {
     opacity: 0.3;
   }
@@ -76,7 +82,7 @@
   }
 }
 
-.program__wraper {
+.program__wrapper {
   margin-top: 20px;
   background-color: #f2f2f2;
   padding: 20px;
@@ -105,7 +111,6 @@
 .program--slim-icon::after {
   content: "";
   background-image: url("../img/icon-cat-slim.svg");
-  /*как сделать что бы картинка была больше чем бэкграунд*/
   background-repeat: no-repeat;
   background-position: 0 0;
   width: 40px;
@@ -159,7 +164,6 @@
 .program--pro-icon::after {
   content: "";
   background-image: url("../img/icon-cat-pro.svg");
-  /*как сделать что бы картинка была больше чем бэкграунд*/
   background-repeat: no-repeat;
   background-position: center;
   width: 70px;

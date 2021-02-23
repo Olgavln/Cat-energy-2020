@@ -21,11 +21,6 @@
 
   @media (min-width: @desktop-width) {
     margin: 0 auto 0 135px;
-    background-image: none; /*url("../img/index-background-desktop@1x.jpg");
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/index-background-desktop@2x.jpg");
-    }*/
   }
 }
 
@@ -42,7 +37,7 @@
     font-family: "oswaldregular", "Arial", sans-serif;
     width: 415px;
     text-align: left;
-    font-size: 55px; /* по макету 60px но не помещается в контейнер*/
+    font-size: 55px;
     line-height: 60px;
     margin: 0;
     color: #000000;
@@ -90,7 +85,7 @@
     width: 245px;
     height: 55px;
     font-size: 20px;
-    font-weight: 20px;
+    line-height: 20px;
     @intro-shift-buttom: -430px;
 
     position: relative;
@@ -107,7 +102,7 @@
   }
 }
 
-.intro-wraper {
+.intro-wrapper {
   position: relative;
 
   @media (min-width: @tablet-width) {
@@ -136,24 +131,6 @@
   }
 }
 
-/*
-@media (min-width: @tablet-width) {
-  .intro-wraper {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding-left: 85px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .intro-wraper {
-    position: relative;
-    padding-left: 135px;
-  }
-
-}*/
-
 .intro__img {
   margin: auto;
 
@@ -178,8 +155,5 @@
     top: @intro-shift;
     margin-bottom: @intro-shift;
     left: 555px;
-    /* margin: -320px 280px 0 auto;*/
   }
 }
-
-/* как правильно отступ сделать от блока выше?*/
